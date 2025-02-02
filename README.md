@@ -1,41 +1,55 @@
-Regression Models
+Overview
 
-The models compare the following treatment groups:
+This repository contains Python scripts that run three separate linear regression models to analyze how different treatment groups influence public perception regarding immigration. Each model compares different groups to assess variations in attitudes.
 
-Control vs. Treatment 1
+Regression Models & Comparisons
 
-Economic Growth Model: Agreement with "Immigrants can contribute to Italy’s economic growth"
+The following regression models are included:
 
-National Duty Model: Agreement with "Assisting migrants is a national duty"
+1️⃣ IV: Control Group vs. Treatment Group 1
 
-Control vs. Treatment 2
+DV: Economic Growth Model: Measures agreement with "Immigrants can contribute to Italy’s economic growth".
 
-Economic Growth Model: Agreement with "Immigrants can contribute to Italy’s economic growth"
+DV: National Duty Model: Measures agreement with "Assisting migrants is a national duty".
 
-National Duty Model: Agreement with "Assisting migrants is a national duty"
+Script: regression_model.py
 
-Treatment 1 vs. Treatment 2
+2️⃣ IV: Control Group vs. Treatment Group 2
 
-Economic Growth Model: Agreement with "Immigrants can contribute to Italy’s economic growth"
+DV: Economic Growth Model: Measures agreement with "Immigrants can contribute to Italy’s economic growth".
 
-National Duty Model: Agreement with "Assisting migrants is a national duty"
+DV: National Duty Model: Measures agreement with "Assisting migrants is a national duty".
 
+Script: regression_model_treatment2.py
 
-Then, run the respective scripts:
+3️⃣ IV: Treatment Group 1 vs. Treatment Group 2
 
-python regression_model.py  # Control vs. Treatment 1
-python regression_model_treatment2.py  # Control vs. Treatment 2
-python regression_model_treatment1_vs_treatment2.py  # Treatment 1 vs. Treatment 2
+DV: Economic Growth Model: Measures agreement with "Immigrants can contribute to Italy’s economic growth".
 
-Outputs
+DV: National Duty Model: Measures agreement with "Assisting migrants is a national duty".
+
+Script: regression_model_treatment1_vs_treatment2.py
+
+Output & Analysis
 
 Each script provides:
 
-Statistical summaries from statsmodels (R², coefficients, p-values, etc.)
+Regression Results from statsmodels:
 
-Performance metrics from sklearn (Mean Squared Error, R²)
+R² (coefficient of determination)
+
+Regression coefficients
+
+Statistical significance (p-values)
+
+Performance Metrics from sklearn:
+
+Mean Squared Error (MSE)
+
+R² Score
+
+These results help determine whether the treatment groups have statistically significant effects on public opinion.
 
 License
 
-This project is for research purposes only.
-
+This project is intended for research purposes only.
